@@ -82,21 +82,21 @@
         <entry key="flutter">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../Flutter-SDK/flutter/packages/flutter/lib" />
+              <option value="$PROJECT_DIR$/../../SDK/flutter/packages/flutter/lib" />
             </list>
           </value>
         </entry>
         <entry key="flutter_localizations">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../Flutter-SDK/flutter/packages/flutter_localizations/lib" />
+              <option value="$PROJECT_DIR$/../../SDK/flutter/packages/flutter_localizations/lib" />
             </list>
           </value>
         </entry>
         <entry key="flutter_test">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../Flutter-SDK/flutter/packages/flutter_test/lib" />
+              <option value="$PROJECT_DIR$/../../SDK/flutter/packages/flutter_test/lib" />
             </list>
           </value>
         </entry>
@@ -180,14 +180,14 @@
         <entry key="pedantic">
           <value>
             <list>
-              <option value="$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/pedantic-1.4.0/lib" />
+              <option value="$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/pedantic-1.5.0/lib" />
             </list>
           </value>
         </entry>
         <entry key="petitparser">
           <value>
             <list>
-              <option value="$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/petitparser-2.1.1/lib" />
+              <option value="$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/petitparser-2.2.1/lib" />
             </list>
           </value>
         </entry>
@@ -215,14 +215,14 @@
         <entry key="sky_engine">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../Flutter-SDK/flutter/bin/cache/pkg/sky_engine/lib" />
+              <option value="$PROJECT_DIR$/../../SDK/flutter/bin/cache/pkg/sky_engine/lib" />
             </list>
           </value>
         </entry>
         <entry key="source_span">
           <value>
             <list>
-              <option value="$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/source_span-1.5.4/lib" />
+              <option value="$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/source_span-1.5.5/lib" />
             </list>
           </value>
         </entry>
@@ -321,12 +321,12 @@
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/meta-1.1.6/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/package_config-1.0.5/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/path-1.6.2/lib" />
-      <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/pedantic-1.4.0/lib" />
-      <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/petitparser-2.1.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/pedantic-1.5.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/petitparser-2.2.1/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/plugin-0.2.0+3/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/pub_semver-1.4.2/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/quiver-2.0.1/lib" />
-      <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/source_span-1.5.4/lib" />
+      <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/source_span-1.5.5/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/stack_trace-1.9.3/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/stream_channel-1.6.8/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/string_scanner-1.0.4/lib" />
@@ -337,10 +337,10 @@
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/watcher-0.9.7+10/lib" />
       <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/yaml-2.1.15/lib" />
-      <root url="file://$PROJECT_DIR$/../../Flutter-SDK/flutter/bin/cache/pkg/sky_engine/lib" />
-      <root url="file://$PROJECT_DIR$/../../Flutter-SDK/flutter/packages/flutter/lib" />
-      <root url="file://$PROJECT_DIR$/../../Flutter-SDK/flutter/packages/flutter_localizations/lib" />
-      <root url="file://$PROJECT_DIR$/../../Flutter-SDK/flutter/packages/flutter_test/lib" />
+      <root url="file://$PROJECT_DIR$/../../SDK/flutter/bin/cache/pkg/sky_engine/lib" />
+      <root url="file://$PROJECT_DIR$/../../SDK/flutter/packages/flutter/lib" />
+      <root url="file://$PROJECT_DIR$/../../SDK/flutter/packages/flutter_localizations/lib" />
+      <root url="file://$PROJECT_DIR$/../../SDK/flutter/packages/flutter_test/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

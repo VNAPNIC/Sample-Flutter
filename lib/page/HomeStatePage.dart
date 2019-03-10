@@ -1,5 +1,6 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
+import 'DetailStatePage.dart';
+import 'package:sample_flutter/constant/Constant.dart';
 
 class HomeStatePage extends StatefulWidget {
   @override
@@ -7,6 +8,18 @@ class HomeStatePage extends StatefulWidget {
 }
 
 class _HomeStatePageState extends State<HomeStatePage> {
+  List<Widget> menus = List();
+
+  @override
+  void initState() {
+    super.initState();
+    menus.add(ListTile(
+      title: Text("Forms"),
+      trailing: Icon(Icons.text_fields),
+      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => DetailStatePage(type: TYPE_FORMS))),
+      subtitle: Text("Text Field"),
+    ));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +29,9 @@ class _HomeStatePageState extends State<HomeStatePage> {
         backgroundColor: Colors.blue,
         title: Text("Home"),
         centerTitle: true,
+      ),
+      body: ListView(
+        children: menus,
       ),
     );
   }

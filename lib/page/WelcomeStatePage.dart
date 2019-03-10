@@ -14,7 +14,6 @@ class _WelcomeStatePageState extends State<WelcomeStatePage>
 
   AnimationController animationController;
   Animation<double> animation;
-  Timer _timer;
 
   startTime() async {
     var _duration = Duration(seconds: 3);
