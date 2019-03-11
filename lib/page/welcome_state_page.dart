@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:sample_flutter/constant/Constant.dart';
+import 'package:sample_flutter/constant/constant.dart';
 
 class WelcomeStatePage extends StatefulWidget {
   @override

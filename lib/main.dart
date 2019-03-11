@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sample_flutter/page/HomeStatePage.dart';
-import 'package:sample_flutter/page/WelcomeStatePage.dart';
-import 'package:sample_flutter/constant/Constant.dart';
+import 'package:sample_flutter/page/home_state_page.dart';
+import 'package:sample_flutter/page/welcome_state_page.dart';
+import 'package:sample_flutter/constant/constant.dart';
 
 void main() => runApp(MyApp());
 

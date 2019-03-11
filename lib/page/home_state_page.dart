@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'DetailStatePage.dart';
-import 'package:sample_flutter/constant/Constant.dart';
+import 'package:sample_flutter/page/detail/detail_state_page.dart';
+import 'package:sample_flutter/constant/constant.dart';
 
 class HomeStatePage extends StatefulWidget {
   @override
