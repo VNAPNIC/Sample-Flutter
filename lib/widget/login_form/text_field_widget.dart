@@ -6,7 +6,7 @@ class TextFieldCustomShadow extends StatefulWidget {
   final TextInputType inputType;
   final bool isPassword;
 
-  TextFieldCustomShadow(this.hint, this.icon, this.inputType, this.isPassword);
+  TextFieldCustomShadow({this.hint, this.icon, this.inputType, this.isPassword});
 
   @override
   _TextFieldCustomShadowState createState() => _TextFieldCustomShadowState();
@@ -15,7 +15,7 @@ class TextFieldCustomShadow extends StatefulWidget {
 class _TextFieldCustomShadowState extends State<TextFieldCustomShadow> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Padding(
       padding: const EdgeInsets.only(top: 30, left: 40, right: 40),
       child: Container(
         padding: const EdgeInsets.only(left: 8.0, right: 8.0),

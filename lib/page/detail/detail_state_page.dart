@@ -19,6 +19,7 @@ class _DetailStatePage extends State<DetailStatePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       body: _initWidget(),
     );
   }
@@ -29,6 +30,7 @@ class _DetailStatePage extends State<DetailStatePage> {
         return LoginFormWidget();
     }
   }
+
   Widget _titleWidget() {
     switch (type) {
       case TYPE_FORMS:

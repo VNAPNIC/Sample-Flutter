@@ -14,10 +14,10 @@ class _HomeStatePageState extends State<HomeStatePage> {
   void initState() {
     super.initState();
     menus.add(ListTile(
-      title: Text("Forms"),
+      title: Text("Login Forms"),
       trailing: Icon(Icons.text_fields),
       onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => DetailStatePage(type: TYPE_FORMS))),
-      subtitle: Text("Text Field"),
+      subtitle: Text("UI Login"),
     ));
   }
 
