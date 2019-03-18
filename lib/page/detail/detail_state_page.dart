@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sample_flutter/constant/constant.dart';
-import 'package:sample_flutter/widget/text_field/form_widget.dart';
+import 'package:sample_flutter/widget/login_form/login_form_widget.dart';
 
 class DetailStatePage extends StatefulWidget {
   final int type;
@@ -19,9 +19,6 @@ class _DetailStatePage extends State<DetailStatePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title:_titleWidget(),
-      ),
       body: _initWidget(),
     );
   }
@@ -29,11 +26,13 @@ class _DetailStatePage extends State<DetailStatePage> {
   Widget _initWidget() {
     switch (type) {
       case TYPE_FORMS:
-        return FormWidget();
+        return LoginFormWidget();
     }
   }
-
   Widget _titleWidget() {
-
+    switch (type) {
+      case TYPE_FORMS:
+        return Text("form");
+    }
   }
 }
