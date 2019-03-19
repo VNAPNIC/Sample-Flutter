@@ -13,6 +13,7 @@ class LoginFormWidget extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(
+              height: 230.0,
               child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
@@ -48,48 +49,58 @@ class LoginFormWidget extends StatelessWidget {
               ),
             ),
             Container(
-              child: Container(
-                padding: EdgeInsets.only(top: 20),
-                child: Column(
-                  children: <Widget>[
-                    TextFieldCustomShadow(
-                        hint: "Email",
-                        icon: Icons.email,
-                        inputType: TextInputType.emailAddress,
-                        isPassword: false),
-                    TextFieldCustomShadow(
-                        hint: "Password",
-                        icon: Icons.vpn_key,
-                        inputType: TextInputType.text,
-                        isPassword: true),
-                    Container(
-                      padding: const EdgeInsets.only(right: 50, top: 20),
-                      alignment: Alignment.centerRight,
-                      child: Text(
-                        "Forgot Password ?",
-                        style: TextStyle(color: Colors.grey),
-                      ),
+              padding: EdgeInsets.only(top: 20),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  TextFieldCustomShadow(
+                      hint: "Email",
+                      icon: Icons.email,
+                      inputType: TextInputType.emailAddress,
+                      isPassword: false),
+                  TextFieldCustomShadow(
+                      hint: "Password",
+                      icon: Icons.vpn_key,
+                      inputType: TextInputType.text,
+                      isPassword: true),
+                  Container(
+                    padding: const EdgeInsets.only(right: 50, top: 20),
+                    alignment: Alignment.centerRight,
+                    child: Text(
+                      "Forgot Password ?",
+                      style: TextStyle(color: Colors.grey),
                     ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(50.0, 50.0, 50.0, 50.0),
-                      child: RaisedGradientButton(
-                        child: Center(
-                            child: Text("LOGIN",
-                                style: TextStyle(color: Colors.white))),
-                        gradient: LinearGradient(
-                            colors: [
-                              const Color.fromARGB(255, 240, 94, 0),
-                              const Color.fromARGB(255, 255, 162, 40)
-                            ],
-                            begin: Alignment.centerRight,
-                            end: Alignment.centerLeft),
-                        width: double.infinity,
-                        height: 46.0,
-                        radius: 30.0,
-                      ),
-                    )
-                  ],
-                ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(50.0, 50.0, 50.0, 50.0),
+                    child: RaisedGradientButton(
+                      child: Center(
+                          child: Text("LOGIN",
+                              style: TextStyle(color: Colors.white))),
+                      gradient: LinearGradient(
+                          colors: [
+                            const Color.fromARGB(255, 240, 94, 0),
+                            const Color.fromARGB(255, 255, 162, 40)
+                          ],
+                          begin: Alignment.centerRight,
+                          end: Alignment.centerLeft),
+                      width: double.infinity,
+                      height: 46.0,
+                      radius: 30.0,
+                    ),
+                  ),
+                  RichText(
+                      text: TextSpan(
+                          style: TextStyle(color: Colors.black),
+                          text: 'Don\' gave ab account ? ',
+                          children: [
+                        TextSpan(
+                            text: 'Register',
+                            style: TextStyle(
+                                color: Colors.orange,
+                                fontWeight: FontWeight.bold)),
+                      ]))
+                ],
               ),
             )
           ],

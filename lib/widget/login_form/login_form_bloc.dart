@@ -4,10 +4,13 @@ import 'package:sample_flutter/bloc/bloc_provider.dart';
 
 class FormBloc implements BlocBase{
 
-  StreamController<String> _streamController = StreamController<String>.broadcast();
+  StreamController _userController = StreamController();
+  StreamController _passController = StreamController();
+
 
   @override
   void dispose() {
-    _streamController.close();
+    _userController.close();
+    _passController.close();
   }
 }
