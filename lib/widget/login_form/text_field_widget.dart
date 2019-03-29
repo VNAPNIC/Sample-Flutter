@@ -5,8 +5,9 @@ class TextFieldCustomShadow extends StatefulWidget {
   final IconData icon;
   final TextInputType inputType;
   final bool isPassword;
+  final TextEditingController textController;
 
-  TextFieldCustomShadow({this.hint, this.icon, this.inputType, this.isPassword});
+  TextFieldCustomShadow({this.textController,this.hint, this.icon, this.inputType, this.isPassword});
 
   @override
   _TextFieldCustomShadowState createState() => _TextFieldCustomShadowState();
@@ -30,6 +31,7 @@ class _TextFieldCustomShadowState extends State<TextFieldCustomShadow> {
           ],
         ),
         child: TextField(
+          controller: widget.textController,
           keyboardType: widget.inputType,
           obscureText: widget.isPassword,
           decoration: InputDecoration(

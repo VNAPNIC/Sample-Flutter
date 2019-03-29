@@ -1,8 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:sample_flutter/widget/login_form/raised_gradient_buttom.dart';
+import 'package:sample_flutter/widget/login_form/login_form_bloc.dart';
+import 'package:sample_flutter/widget/login_form/raised_gradient_widget.dart';
 import 'package:sample_flutter/widget/login_form/text_field_widget.dart';
+import 'package:flutter/foundation.dart';
+import 'package:http/http.dart' as http;
 
-class LoginFormWidget extends StatelessWidget {
+class LoginFormWidget extends StatefulWidget {
+  final LoginFormBloc bloc = LoginFormBloc();
+
+  @override
+  _LoginFormWidgetState createState() => _LoginFormWidgetState();
+}
+
+class _LoginFormWidgetState extends State<LoginFormWidget> {
+
+  TextEditingController _userController = TextEditingController();
+  TextEditingController _passController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,16 +67,27 @@ class LoginFormWidget extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  TextFieldCustomShadow(
-                      hint: "Email",
-                      icon: Icons.email,
-                      inputType: TextInputType.emailAddress,
-                      isPassword: false),
-                  TextFieldCustomShadow(
-                      hint: "Password",
-                      icon: Icons.vpn_key,
-                      inputType: TextInputType.text,
-                      isPassword: true),
+                  // Username
+                  StreamBuilder(
+                    stream: widget.bloc.userStream,
+                    builder: (context, snapshot) => TextFieldCustomShadow(
+                        textController: _userController,
+                        hint: "Email",
+                        icon: Icons.email,
+                        inputType: TextInputType.emailAddress,
+                        isPassword: false),
+                  ),
+                  // Password
+                  StreamBuilder(
+                      stream: widget.bloc.passStream,
+                      builder: (context, snapshot) {
+                        return TextFieldCustomShadow(
+                            textController: _passController,
+                            hint: "Password",
+                            icon: Icons.vpn_key,
+                            inputType: TextInputType.text,
+                            isPassword: true);
+                      }),
                   Container(
                     padding: const EdgeInsets.only(right: 50, top: 20),
                     alignment: Alignment.centerRight,
@@ -73,7 +98,9 @@ class LoginFormWidget extends StatelessWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.fromLTRB(50.0, 50.0, 50.0, 50.0),
+                    //Button Login
                     child: RaisedGradientButton(
+                      onPressed: _login,
                       child: Center(
                           child: Text("LOGIN",
                               style: TextStyle(color: Colors.white))),
@@ -107,5 +134,13 @@ class LoginFormWidget extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _login() {
+   http.post("http://10.64.1.198:1337",body: {"userName":_userController.text,"password":_passController.text})
+        .then((response) {
+      debugPrint("Response status: ${response.statusCode}");
+      debugPrint("Response body: ${response.body}");
+    });
   }
 }
